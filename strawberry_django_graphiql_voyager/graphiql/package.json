@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "node postbuild.js && rm -rf ./../static/strawberry_django_graphiql_voyager/js && rm -rf ./../static/strawberry_django_graphiql_voyager/js && cp -R ./build/static/ ./../static/strawberry_django_graphiql_voyager && rm -rf ./../static/strawberry_django_graphiql_voyager/media",
+    "postbuild": "node postbuild.js && rm -rf ./../static/strawberry_django_graphiql_voyager/graphiql/js && rm -rf ./../static/strawberry_django_graphiql_voyager/graphiql/js && cp -R ./build/static/ ./../static/strawberry_django_graphiql_voyager/graphiql && rm -rf ./../static/strawberry_django_graphiql_voyager/graphiql/media",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
