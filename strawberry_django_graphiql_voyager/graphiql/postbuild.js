@@ -15,7 +15,7 @@ const generatePastableScriptTags = scripts => {
     .filter(s => !s.endsWith(".map"))
     .forEach(s =>
       console.log(
-        `<script src="{% static 'strawberry_django_graphiql_voyager/js/${s}' %}"></script>`
+        `<script src="{% static 'strawberry_django_graphiql_voyager/graphiql/js/${s}' %}"></script>`
       )
     );
   console.log("\n");
@@ -30,7 +30,7 @@ const generatePastableStyleTags = styles => {
     .filter(s => !s.endsWith(".map"))
     .forEach(s =>
       console.log(
-        `<link href="{% static 'strawberry_django_graphiql_voyager/css/${s}' %}" rel="stylesheet" /> `
+        `<link href="{% static 'strawberry_django_graphiql_voyager/graphiql/css/${s}' %}" rel="stylesheet" /> `
       )
     );
   console.log("\n");
