@@ -20,24 +20,24 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      !(function (u) {
+      !(function (f) {
         function e(e) {
           for (
-            var r, t, n = e[0], o = e[1], a = e[2], c = 0, f = [];
-            c < n.length;
-            c++
+            var r, t, n = e[0], o = e[1], c = e[2], a = 0, u = [];
+            a < n.length;
+            a++
           )
-            (t = n[c]), l[t] && f.push(l[t][0]), (l[t] = 0);
+            (t = n[a]), l[t] && u.push(l[t][0]), (l[t] = 0);
           for (r in o)
-            Object.prototype.hasOwnProperty.call(o, r) && (u[r] = o[r]);
-          for (s && s(e); f.length; ) f.shift()();
-          return d.push.apply(d, a || []), i();
+            Object.prototype.hasOwnProperty.call(o, r) && (f[r] = o[r]);
+          for (s && s(e); u.length; ) u.shift()();
+          return d.push.apply(d, c || []), i();
         }
         function i() {
           for (var e, r = 0; r < d.length; r++) {
             for (var t = d[r], n = !0, o = 1; o < t.length; o++) {
-              var a = t[o];
-              0 !== l[a] && (n = !1);
+              var c = t[o];
+              0 !== l[c] && (n = !1);
             }
             n && (d.splice(r--, 1), (e = p((p.s = t[0]))));
           }
@@ -49,66 +49,66 @@
         function p(e) {
           if (t[e]) return t[e].exports;
           var r = (t[e] = { i: e, l: !1, exports: {} });
-          return u[e].call(r.exports, r, r.exports, p), (r.l = !0), r.exports;
+          return f[e].call(r.exports, r, r.exports, p), (r.l = !0), r.exports;
         }
-        (p.e = function (a) {
+        (p.e = function (c) {
           var e = [],
-            t = l[a];
+            t = l[c];
           if (0 !== t)
             if (t) e.push(t[2]);
             else {
               var r = new Promise(function (e, r) {
-                t = l[a] = [e, r];
+                t = l[c] = [e, r];
               });
               e.push((t[2] = r));
               var n,
-                c = document.createElement("script");
-              (c.charset = "utf-8"),
-                (c.timeout = 120),
-                p.nc && c.setAttribute("nonce", p.nc),
-                (c.src =
+                a = document.createElement("script");
+              (a.charset = "utf-8"),
+                (a.timeout = 120),
+                p.nc && a.setAttribute("nonce", p.nc),
+                (a.src =
                   p.p +
                   "{% static 'strawberry_django_graphiql_voyager/graphiql/js/' %}" +
-                  ({}[a] || a) +
+                  ({}[c] || c) +
                   "." +
                   {
-                    0: "803372fe",
-                    1: "dc94fe74",
-                    2: "8a52e67c",
-                    3: "ac475cb0",
-                    4: "fed8c0f9",
-                    5: "ffa46665",
-                    6: "d6d03960",
-                    7: "8ca85c96",
-                    8: "ccee8b02",
-                    12: "fed03a7b",
+                    0: "d69ee02e",
+                    1: "d76c06cc",
+                    2: "591f5756",
+                    3: "be05d828",
+                    4: "6c088241",
+                    5: "2f6c7945",
+                    6: "c7c77fbb",
+                    7: "b605e08f",
+                    8: "32bdc3c7",
+                    12: "a9526db5",
                     13: "2ac64509",
-                    14: "7f39502d",
+                    14: "d5d84371",
                     15: "812c88f9",
-                    16: "04df955b",
+                    16: "ce8357ac",
                     17: "e84c62d5",
                     18: "9d20f18a",
                     19: "8e86fbfa",
                     20: "3b18185a",
-                    21: "7d95f9df",
-                    22: "92ae6867",
+                    21: "41f21244",
+                    22: "8fbf3b0e",
                     23: "6098cda7",
-                    24: "3f9f09be",
-                    25: "aaa060ca",
-                    26: "c9d41cb0",
-                    27: "a867a579",
-                  }[a] +
+                    24: "d76a1f43",
+                    25: "53cfe552",
+                    26: "5a70ef0a",
+                    27: "c2a642ff",
+                  }[c] +
                   ".chunk.js"),
                 (n = function (e) {
-                  (c.onerror = c.onload = null), clearTimeout(f);
-                  var r = l[a];
+                  (a.onerror = a.onload = null), clearTimeout(u);
+                  var r = l[c];
                   if (0 !== r) {
                     if (r) {
                       var t = e && ("load" === e.type ? "missing" : e.type),
                         n = e && e.target && e.target.src,
                         o = new Error(
                           "Loading chunk " +
-                            a +
+                            c +
                             " failed.\n(" +
                             t +
                             ": " +
@@ -117,17 +117,17 @@
                         );
                       (o.type = t), (o.request = n), r[1](o);
                     }
-                    l[a] = void 0;
+                    l[c] = void 0;
                   }
                 });
-              var f = setTimeout(function () {
-                n({ type: "timeout", target: c });
+              var u = setTimeout(function () {
+                n({ type: "timeout", target: a });
               }, 12e4);
-              (c.onerror = c.onload = n), document.head.appendChild(c);
+              (a.onerror = a.onload = n), document.head.appendChild(a);
             }
           return Promise.all(e);
         }),
-          (p.m = u),
+          (p.m = f),
           (p.c = t),
           (p.d = function (e, r, t) {
             p.o(e, r) ||
