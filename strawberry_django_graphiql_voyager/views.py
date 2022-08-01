@@ -40,6 +40,8 @@ class AsyncGraphQLView(GraphQLView):
             request=request, template=None, context=context)
         response.content = template.render(RequestContext(request, context))
 
+        return response
+
 
 class TemplateView(GenericTemplateView):
     template_name = "strawberry_django_graphiql_voyager/voyager.html"
